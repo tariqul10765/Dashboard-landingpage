@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* header section */
 .search-bar{
     padding: 10px;
     width: 100%;
@@ -23,6 +24,8 @@
     color: white;
 }
 
+
+/* sidebar section */
 aside .sidebar{
     position: fixed;
 }
@@ -34,14 +37,23 @@ aside .nav-link:nth-child(1){
 }
 
 @media only screen and (max-width: 576px) {
+    /* header section */
+    .navbar-brand{
+        padding: 10px 0;
+    }
+
+
+    /* side-bar section */
+    aside .sidebar{
+        margin-top: 132px;
+        position: sticky;
+    }
+
+    /* main section */
     .main-content{
         margin-top: 132px;
     }
     .chart{
         margin-top: 15px;
-    }
-    aside .sidebar{
-        margin-top: 132px;
-        position: sticky;
     }
 }
