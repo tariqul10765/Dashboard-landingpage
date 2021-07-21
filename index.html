@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+    <title>Document</title>
+
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- external style -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+
+    <!-- Header section -->
+    <header>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark p-0">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand col-md-2 ps-3 m-0" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="col-lg-9 col-12">
+                    <input type="text" class="search-bar" placeholder="Search">
+                </div>
+                <div class="col-lg-1 col-12 sign-out">
+                    <a class="ps-3" href="#">Sign out</a>
+                </div>
+            </div>
+        </nav>   
+    </header>
+
+
+    <!-- Main section -->
+    <main class="my-5">
+        <!-- sidebar section -->
+        <aside>
+            <div class="col-md-2 col-12 bg-secondary collapse d-md-block bg-dark sidebar" id="navbarSupportedContent">
+                <div class="nav flex-column flex-nowrap vh-100 overflow-auto p-2">
+                    <a href="./" class="nav-link active">Dashboard</a>
+                    <a href="./" class="nav-link">Order</a>
+                    <a href="./" class="nav-link">Products</a>
+                    <a href="./" class="nav-link">Customers</a>
+                    <a href="./" class="nav-link">Reports</a>
+                    <a href="./" class="nav-link">Integrations</a>
+                    <a href="./" class="nav-link">Integrations</a>
+    
+                    <hr>
+                    <p>Saved reports</p>
+    
+                    <a href="./" class="nav-link active text-secondary">Dashboard</a>
+                    <a href="./" class="nav-link">Current month</a>
+                    <a href="./" class="nav-link">Last month</a>
+                    <a href="./" class="nav-link">Social engagement</a>
+                    <a href="./" class="nav-link">Last quarter</a>
+                </div>
+            </div>
+
+            
+        </aside>
+
+
+        <section class="container pt-4 main-content">
+            
+            <div class="col-md-10 offset-md-2">
+                <!-- Section title -->
+                <div class="d-md-flex justify-content-between">
+                    <h1>Dashboard</h1>
+                    <div>
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-outline-secondary">Share</button>
+                            <button type="button" class="btn btn-outline-secondary">Export</button>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary">This week</button>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- chart section -->
+                <div class="chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+
+                <!-- Table section -->
+                <div class="table-responsive-md my-5">
+                    <h1>Section Title</h1>
+                    <table class="table table-bordered table-striped table-hover">
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                            <th>Cell</th>
+                            <th>Address</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                            <td>01862274335</td>
+                            <td>Demra</td>
+                            <td>a@a.com</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                            <td>01580663066</td>
+                            <td>Dhaka</td>
+                            <td>b@b.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ernst Handel</td>
+                            <td>Roland Mendel</td>
+                            <td>Austria</td>
+                            <td>01954939096</td>
+                            <td>Rajshahi</td>
+                            <td>c@c.com</td>
+                        </tr>
+                        <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                            <td>01580663066</td>
+                            <td>Pabna</td>
+                            <td>d@d.com</td>
+                        </tr>
+                        <tr>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                            <td>01954939096</td>
+                            <td>Rajshahi</td>
+                            <td>e@e.com</td>
+                        </tr>
+                        <tr>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Giovanni Rovelli</td>
+                            <td>Italy</td>
+                            <td>01864447651</td>
+                            <td>Khulna</td>
+                            <td>f@f.com</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                            <td>01580663066</td>
+                            <td>Dhaka</td>
+                            <td>b@b.com</td>
+                        </tr>
+                        <tr>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                            <td>01954939096</td>
+                            <td>Rajshahi</td>
+                            <td>e@e.com</td>
+                        </tr>
+                        <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                            <td>01580663066</td>
+                            <td>Pabna</td>
+                            <td>d@d.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Chart js -->
+    <script src="js/chart.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.search-bar{
+    padding: 10px;
+    width: 100%;
+    background-color: #35393b;
+}
+.search-bar:focus{
+    background-color: white;
+}
+
+
+.sign-out{
+    /* width: 100%; */
+    padding: 10px 0;
+    border: none;
+}
+.sign-out a{
+    text-decoration: none;
+    color: white;
+}
+
+aside .sidebar{
+    position: fixed;
+}
+aside .nav-link{
+    color: gray;
+}
+aside .nav-link:nth-child(1){
+    color: blue
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content{
+        margin-top: 132px;
+    }
+    .chart{
+        margin-top: 15px;
+    }
+    aside .sidebar{
+        margin-top: 132px;
+        position: sticky;
+    }
+}
